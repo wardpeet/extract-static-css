@@ -1,0 +1,21 @@
+{
+  "name": "extract-static-css--emotion",
+  "version": "0.0.0",
+  "description": "Example on how extract static css works with emotion library",
+  "main": "src/index.js",
+  "repository": "https://github.com/wardpeet/extract-static-css",
+  "author": "Ward Peeters",
+  "license": "Apache-2.0",
+  "private": false,
+  "dependencies": {
+    "emotion": "^9.2.6",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-emotion": "^9.2.6"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.1.0"
+  }
+}
