@@ -1,10 +1,14 @@
 {
   "dependencies": {},
   "devDependencies": {
+    "eslint": "^5.4.0",
     "husky": "^1.0.0-rc.13",
     "lint-staged": "^7.2.2",
     "prettier": "1.14.2",
     "typescript": "^3.1.0-dev.20180817"
+  },
+  "scripts": {
+    "lint": "eslint --quiet -f codeframe ."
   },
   "husky": {
     "hooks": {
@@ -12,7 +16,13 @@
     }
   },
   "lint-staged": {
-    "*.{js,json,css,md}": [
+    "*.js": [
+      "eslint --fix",
+      "prettier --write",
+      "eslint",
+      "git add"
+    ],
+    "*.{json,css,md}": [
       "prettier --write",
       "git add"
     ]
