@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "diagnostics": true,
+    "module": "commonjs",
+    "noEmit": true,
+    "noImplicitAny": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "target": "ES2017",
+    "typeRoots": ["node_modules/@types", "./typings/**/*"]
+  }
+}
