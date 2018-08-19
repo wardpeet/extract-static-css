@@ -77,3 +77,6 @@ node_modules/
 .cache
 
 # End of https://www.gitignore.io/api/macos,windows,webstorm,visualstudiocode,node
+
+# do not include dist folder
+dist/
