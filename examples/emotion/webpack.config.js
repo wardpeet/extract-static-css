@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const VirtualModulePlugin = require('virtual-module-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -13,7 +14,7 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: ['babel-loader', '../../lib/webpack-loader/index.js'],
+        loader: ['babel-loader', '../../lib/webpack-plugin/index.js'],
       },
       {
         test: /\.css$/,
